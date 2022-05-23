@@ -27,10 +27,21 @@
 </template>
 
 <script>
-import { createPopper } from '@popperjs/core'
+// import { createPopper } from '@popperjs/core'
 import jump from 'jump.js'
 import sum from 'hash-sum'
+import {
+  popperGenerator,
+  defaultModifiers
+} from '@popperjs/core/lib/popper-lite'
+import flip from '@popperjs/core/lib/modifiers/flip'
+import preventOverflow from '@popperjs/core/lib/modifiers/preventOverflow'
+
 import { DEFAULT_STEP_OPTIONS, HIGHLIGHT } from '../shared/constants'
+
+const createPopper = popperGenerator({
+  defaultModifiers: [...defaultModifiers, flip, preventOverflow]
+})
 
 export default {
   name: 'v-step',
