@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["vue-tour"] = factory();
+		exports["vue-tour-fork"] = factory();
 	else
-		root["vue-tour"] = factory();
+		root["vue-tour-fork"] = factory();
 })((typeof self !== 'undefined' ? self : this), function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -9631,4 +9631,4 @@ module.exports = NATIVE_SYMBOL
 
 /******/ });
 });
-//# sourceMappingURL=vue-tour.umd.js.map
+//# sourceMappingURL=vue-tour-fork.umd.js.map

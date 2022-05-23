@@ -9621,4 +9621,4 @@ module.exports = NATIVE_SYMBOL
 /***/ })
 
 /******/ });
-//# sourceMappingURL=vue-tour.common.js.map
+//# sourceMappingURL=vue-tour-fork.common.js.map
